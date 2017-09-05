@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="CrystalsCollector">
+			<h1> CrystalsCollector!</h1>
+		</div>
+	<br>
+
+		<div class="gameInfo">
+			<p>	You will be given a random number at the start of the game. </p>
+			
+			<p> There are four crystals below. By clicking on a crystal you will add a specific amount og points to your total score.</p>
+
+			<p> You will win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p> 
+
+			<p>The value of each of the crystal is hidden from you until you click on it.</p>
+
+			<p>Each time when the game starts, the game will change the value of each crystal. 
+			</p>
+		</div>
+
+		<br>
+		<div id="row">
+			<div id="randomNumber"></div>
+
+			<div id="winlose">
+				<div id="userWins">Wins: </div>
+				<div id="userLosses">Losses: </div>
+			</div>
+		</div>
+
+		<br>
+
+		<div id="crystals">
+			<button><img id= "crystal1" src="assets/images/crystal1.png"></button>
+	 		<button><img id= "crystal2" src="assets/images/crystal2.png"></button>
+			<button><img id= "crystal3" src="assets/images/crystal3.png"></button>
+			<button><img id= "crystal4" src="assets/images/crystal4.png"></button>
+		</div>
+ 			
+		
+		<div class="yourScore">Your total score is: </div>
+
+		<div id="userScore"></div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+	
+
+</body>
+</html>
