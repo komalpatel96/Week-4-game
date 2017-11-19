@@ -2,8 +2,25 @@
 <html>
 <head>
 	<title>Crystals Collector</title>
+	<!-- style sheets -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- jQuery Link -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+
+
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
 	<div class="container">
@@ -12,24 +29,29 @@
 		</div>
 	<br>
 
-		<div class="gameInfo">
+<div class="row">
+    <div class="col col-sm-6 col-md-6 col-lg-6 col-xs-6">
+    	<div class="gameInfo">
+    		<p>	How to play Crystal Collector: </p>
+			<br>
 			<p>	You will be given a random number at the start of the game. </p>
-			
+			<br>
 			<p> There are four crystals below. By clicking on a crystal you will add a specific amount og points to your total score.</p>
-
+			<br>
 			<p> You will win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p> 
-
+			<br>
 			<p>The value of each of the crystal is hidden from you until you click on it.</p>
-
+			<br>
 			<p>Each time when the game starts, the game will change the value of each crystal. 
 			</p>
 		</div>
-
-		<br>
-		<div id="row">
-			<div id="randomNumber"></div>
+    </div>
+    <div class="col col-sm-6 col-md-6 col-lg-6 col-xs-6">
+    			<div id="row">
+			<div id="randomNumber">Goal: </div>
 
 			<div id="winlose">
+				<div id="message">Your First Game!</div>
 				<div id="userWins">Wins: </div>
 				<div id="userLosses">Losses: </div>
 			</div>
@@ -38,19 +60,21 @@
 		<br>
 
 		<div id="crystals">
-			<button><img id= "crystal1" src="assets/images/crystal1.png"></button>
-	 		<button><img id= "crystal2" src="assets/images/crystal2.png"></button>
-			<button><img id= "crystal3" src="assets/images/crystal3.png"></button>
-			<button><img id= "crystal4" src="assets/images/crystal4.png"></button>
+			<button class="btn btn-danger"><img id= "crystal1" src="assets/images/crystal1.png"></button>
+	 		<button class="btn btn-primary"><img id= "crystal2" src="assets/images/crystal2.png"></button>
+			<button class="btn btn-warning"><img id= "crystal3" src="assets/images/crystal3.png"></button>
+			<button class="btn btn-success"><img id= "crystal4" src="assets/images/crystal4.png"></button>
 		</div>
  			
 		
 		<div class="yourScore">Your total score is: </div>
 
-		<div id="userScore"></div>
+		<div id="userScore"> 0 </div>
+    	
+    </div>
+  </div>
+		
 	</div>
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
 	
 
